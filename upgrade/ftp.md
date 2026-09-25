@@ -1,21 +1,57 @@
 # Updating WordPress using FTP
 
 ## FTP Clients
-There are two ways of getting files onto your site, and once there, changing them:
 
-1. By using the file manager provided in your host’s control panel. Popular file managers: [cPanel](https://documentation.cpanel.net/display/64Docs/File+Manager), [DirectAdmin](http://www.site-helper.com/filemanager.html), [Plesk](https://www.plesk.com/).
-2. By using an FTP or SFTP client. This guide will show you how to use [FileZilla](https://filezilla-project.org/).
+There are two common ways to upload and manage files on your site:
 
-FTP or “File Transfer Protocol” has been the most widely used transfer protocol for over thirty years, but it sends your information in the clear, which is a security risk. Use SFTP (Secure File Transfer Protocol) if your host supports it. This transfers your files and your password over a secured connection, and should therefore be used instead of FTP whenever possible. Sometimes you have to contact your host to have SFTP enabled on your account.
+1. Use the file manager provided by your host's control panel.
+2. Use an FTP, FTPS, or SFTP client.
 
-Why use FileZilla? Because, like WordPress, it is released under the GPL. So, it is not just free, it is staying that way, too. The following pages will show you how to setup and use Filezilla:
+Both options are interfaces for working with files on your server. The best choice depends on the task, your access level, and what your host supports.
 
-1. [Setting up FileZilla for Your Website](https://wordpress.org/support/article/using-filezilla/)
-2. [Setting Permissions](https://wordpress.org/support/article/changing-file-permissions/)
-3. [FileZilla’s Extensive Documentation](https://wiki.filezilla-project.org/Documentation)
+## Before Transferring Files
 
-Want to try a different FTP or SFTP client? [Find more on Wikipedia](http://en.wikipedia.org/wiki/Comparison_of_FTP_clients).
+Before uploading, replacing, or deleting WordPress files, make sure you have a current backup of both your site files and database. Also confirm the correct site directory with your host, especially if your account contains more than one site or staging environment.
 
-## Changelog
+When replacing files, avoid changing file permissions unless you know they are incorrect. Incorrect permissions can prevent WordPress, themes, plugins, or the web server from reading or writing files.
 
-- 2022-09-11: Copied content from https://wordpress.org/support/article/ftp-clients/. Minor copy-editing.
+## When to Use a Control Panel File Manager
+
+A control panel file manager can be useful for quick, one-off tasks in a browser, such as:
+
+* Renaming a file.
+* Uploading a single file.
+* Checking which files are on the server.
+* Making a small emergency edit when you cannot install software on your computer.
+
+For larger uploads, a browser-based file manager can be slower or more limited. Some hosts also limit upload size, timeout duration, or ZIP extraction features in the control panel.
+
+## When to Use an FTP, FTPS, or SFTP Client
+
+An FTP, FTPS, or SFTP client is often a better choice for larger or repeatable file-management tasks, such as:
+
+* Uploading many files or folders.
+* Replacing WordPress core files during a manual update.
+* Uploading a theme or plugin.
+* Mirroring a local folder to the server.
+* Using transfer queues.
+* Resuming interrupted transfers.
+* Being prompted before overwriting existing files.
+* Working faster with drag-and-drop and bulk operations.
+* Viewing hidden files, such as `.htaccess`, when your client is configured to show them.
+
+FTP, or File Transfer Protocol, sends data in clear text. This is a security risk because your files and password are not encrypted during transfer.
+
+Use **SFTP** (SSH File Transfer Protocol) or **FTPS** (FTP over TLS) instead of plain FTP whenever your host supports it. SFTP and FTPS transfer files over an encrypted connection. You may need to contact your host to confirm which protocol, host name, port, username, and authentication method you should use.
+
+## Using FileZilla
+
+FileZilla is a popular FTP, FTPS, and SFTP client. Like WordPress, it is released under the GPL.
+
+The following pages can help you set up and use FileZilla:
+
+1. [Setting up FileZilla for your website](https://developer.wordpress.org/advanced-administration/upgrade/ftp/filezilla/)
+2. [Setting permissions](https://developer.wordpress.org/advanced-administration/server/file-permissions/)
+3. [FileZilla documentation](https://wiki.filezilla-project.org/Documentation)
+
+Other FTP, FTPS, and SFTP clients are available. Before choosing one, check that it supports your operating system and the protocol your host requires.

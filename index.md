@@ -1,4 +1,4 @@
-# WordPress Advanced Administration Handbook
+# Advanced Administration Handbook
 
 Welcome to the **WordPress Advanced Administration Handbook**! Here you will find WordPress advanced documentation. Use the "Contents" menu on the left to navigate topics.
 
@@ -14,12 +14,6 @@ The Documentation Team meets in the WordPress Slack, in the [#docs](https://word
 
 ## Advanced Administration Handbook managers
 
-This documentation is managed by [@javiercasares](https://profiles.wordpress.org/javiercasares/), [@lucp](https://profiles.wordpress.org/lucp/), and [@milana_cap](https://profiles.wordpress.org/milana_cap/).
+This documentation is managed by [@javiercasares](https://profiles.wordpress.org/javiercasares/), [@lucp](https://profiles.wordpress.org/lucp/), and [@milana_cap](https://profiles.wordpress.org/milana_cap/). Also, the [Documentation Team](https://make.wordpress.org/docs/) and [Hosting Team](https://make.wordpress.org/hosting/) are involved in this.
 
-Also, the [Documentation Team](https://make.wordpress.org/docs/) and [Hosting Team](https://make.wordpress.org/hosting/) are involved in this.
-
-[info]If you’re interested in improving this handbook, check the [Github Handbook repo](https://github.com/zzap/WordPress-Advanced-administration-handbook), the [Documentation Issue tracked](https://github.com/WordPress/Documentation-Issue-Tracker/labels/advanced%20administration), or leave a message in the [#hosting-community channel](https://wordpress.slack.com/archives/hosting-community/) of the official [WordPress Slack](https://make.wordpress.org/chat/).[/info]
-
-## Changelog
-
-- 2022-08-16: First version
+[info]If you're interested in improving this handbook, check the [Github Handbook repo](https://github.com/WordPress/WordPress-Advanced-administration-handbook), the [Documentation Issue tracked](https://github.com/WordPress/Documentation-Issue-Tracker/labels/advanced%20administration), or leave a message in the [#hosting-community channel](https://wordpress.slack.com/archives/hosting-community/) at [WordPress Slack](https://make.wordpress.org/chat/).[/info]
